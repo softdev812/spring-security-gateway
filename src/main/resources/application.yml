@@ -1,0 +1,69 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: ptc-gateway
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sptc?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowCredentials: true
+            allowedMethods:
+              - GET
+              - POST
+              - OPTIONS
+              - DELETE
+              - PUT
+              - HEAD
+              - PATCH
+      discovery:
+        locator:
+          enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7101/eureka/
+  instance:
+    prefer-ip-address: true
+    
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+
+logging:
+  level:
+    com.ptc.api.**: debug
+
+ribbon:
+  ReadTimeout: 120000
+  ConnectTimeout: 30000
+
+redis:
+  database: 0
+  host: 192.168.116.129
+  port: 6379
+  password:
+  timeout: 3000
+  pool:
+    max-wait: -1
+    max-idle: 10
+    min-idle: 0

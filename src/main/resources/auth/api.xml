@@ -1,0 +1,7 @@
+<paths>
+    <anonymous>
+        <path url="/api/v2/third/getSimByParam" />
+        <path url="/api/v2/third/unactivePackage" />
+        <path url="/api/v2/third/getGoodsRelevance" />
+    </anonymous>
+</paths>

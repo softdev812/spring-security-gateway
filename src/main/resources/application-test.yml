@@ -1,0 +1,71 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: ptc-gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            exposedHeaders:
+              - content-type
+            allowedHeaders:
+              - content-type
+            allowCredentials: true
+            allowedMethods:
+              - GET
+              - OPTIONS
+              - PUT
+              - DELETE
+              - POST
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: ptc-user
+          uri: lb://ptc-user
+          predicates:
+            - Path=/system/**,/login,/customer/**,/user/**
+        - id: ptc-resource
+          uri: lb://ptc-resource
+          predicates:
+            - Path=/resource/**
+
+ptc:
+  system:
+    auth-white-list: /login,/logout,/system/captcha/captcha.jpg,/**/export,/**/template,/resource/download/**
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7101/eureka/
+  instance:
+    prefer-ip-address: true
+    
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+
+logging:
+  level:
+    com.ptc.api.**: debug
+
+ribbon:
+  ReadTimeout: 120000
+  ConnectTimeout: 30000
+
+#jwt
+jwt:
+  header: Authorization
+  token-start-with: Bearer
+  base64-secret: XXXXXXXXXXXXXXXX
+  token-validity-in-seconds: 14400000

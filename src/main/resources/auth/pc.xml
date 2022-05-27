@@ -1,0 +1,237 @@
+<paths>
+    <anonymous>
+        <path url="/login" />
+        <path url="/system/menu/nav" />
+        <path url="/resource/knowledge/export" />
+        <path url="/customer/enterprisegroup/list" />
+        <path url="/customer/enterprisegroup/update" />
+        <path url="/pc/apps/user/loginBEnd" />
+        <path url="/pc/sim/smsLog/saveLog" />
+        <path url="/pc/apps/user/getUserInfoByToken" />
+        <path url="/user/**" />
+        <path url="/resource/download/**" />
+        <path url="/resource/upload" />
+    </anonymous>
+    <auth>
+        <path url="/system/user/list">
+            <right>system:user:list</right>
+        </path>
+        <path url="/system/user/info">
+            <right>system:user:query</right>
+        </path>
+        <path url="/system/user/save">
+            <right>system:user:add</right>
+        </path>
+        <path url="/system/user/update">
+            <right>system:user:edit</right>
+        </path>
+        <path url="/system/user/resume">
+            <right>system:user:edit</right>
+        </path>
+        <path url="/system/user/pause">
+            <right>system:user:edit</right>
+        </path>
+        <path url="/system/user/resetpassword">
+            <right>system:user:edit</right>
+        </path>
+        <path url="/system/user/delete">
+            <right>system:user:remove</right>
+        </path>
+        <path url="/system/role/list">
+            <right>system:role:list</right>
+        </path>
+        <path url="/system/role/info">
+            <right>system:role:query</right>
+        </path>
+        <path url="/system/role/save">
+            <right>system:role:add</right>
+        </path>
+        <path url="/system/role/update">
+            <right>system:role:edit</right>
+        </path>
+        <path url="/system/role/delete">
+            <right>system:role:remove</right>
+        </path>
+        <path url="/system/menu/list">
+            <right>system:menu:query</right>
+        </path>
+        <path url="/system/menu/info">
+            <right>system:menu:query</right>
+        </path>
+        <path url="/system/menu/save">
+            <right>system:menu:add</right>
+        </path>
+        <path url="/system/menu/update">
+            <right>system:menu:edit</right>
+        </path>
+        <path url="/system/menu/delete">
+            <right>system:menu:remove</right>
+        </path>
+        <path url="/system/dept/list">
+            <right>system:dept:list</right>
+        </path>
+        <path url="/system/operlog/list">
+            <right>system:operlog:list</right>
+        </path>
+        <path url="/resource/knowledgetype/list">
+            <right>resource:knowledgetype:query</right>
+        </path>
+        <path url="/resource/knowledgetype/info">
+            <right>resource:knowledgetype:query</right>
+        </path>
+        <path url="/resource/knowledgetype/save">
+            <right>resource:knowledgetype:add</right>
+        </path>
+        <path url="/resource/knowledgetype/update">
+            <right>resource:knowledgetype:edit</right>
+        </path>
+        <path url="/resource/knowledgetype/delete">
+            <right>resource:knowledgetype:remove</right>
+        </path>
+        <path url="/resource/knowledge/list">
+            <right>resource:knowledge:query</right>
+        </path>
+        <path url="/resource/knowledge/info">
+            <right>resource:knowledge:query</right>
+        </path>
+        <path url="/resource/knowledge/save">
+            <right>resource:knowledge:add</right>
+        </path>
+        <path url="/resource/knowledge/update">
+            <right>resource:knowledge:edit</right>
+        </path>
+        <path url="/resource/knowledge/publish">
+            <right>resource:knowledge:edit</right>
+        </path>
+        <path url="/resource/knowledge/delete">
+            <right>resource:knowledge:remove</right>
+        </path>
+        <path url="/resource/knowledge/export">
+            <right>resource:knowledge:export</right>
+        </path>
+        <path url="/resource/knowledge/template">
+            <right>resource:knowledge:add</right>
+        </path>
+        <path url="/resource/knowledge/import">
+            <right>resource:knowledge:add</right>
+        </path>
+        <path url="/resource/notice/list">
+            <right>resource:notice:query</right>
+        </path>
+        <path url="/resource/notice/info">
+            <right>resource:notice:query</right>
+        </path>
+        <path url="/resource/notice/save">
+            <right>resource:notice:add</right>
+        </path>
+        <path url="/resource/notice/update">
+            <right>resource:notice:edit</right>
+        </path>
+        <path url="/resource/notice/publish">
+            <right>resource:notice:edit</right>
+        </path>
+        <path url="/resource/notice/delete">
+            <right>resource:notice:remove</right>
+        </path>
+        <path url="/system/team/list">
+            <right>system:team:query</right>
+        </path>
+        <path url="/system/team/listwithmembers">
+            <right>system:team:query</right>
+        </path>
+        <path url="/system/team/info">
+            <right>system:team:query</right>
+        </path>
+        <path url="/system/team/save">
+            <right>system:team:add</right>
+        </path>
+        <path url="/system/team/update">
+            <right>system:team:edit</right>
+        </path>
+        <path url="/system/team/delete">
+            <right>system:team:remove</right>
+        </path>
+        <path url="/customer/enterprise/list">
+            <right>customer:enterprise:query</right>
+        </path>
+        <path url="/customer/enterprise/listenterprisecity">
+            <right>customer:enterprise:query</right>
+        </path>
+        <path url="/customer/enterprise/info">
+            <right>customer:enterprise:query</right>
+        </path>
+        <path url="/customer/enterprise/save">
+            <right>customer:enterprise:add</right>
+        </path>
+        <path url="/customer/enterprise/update">
+            <right>customer:enterprise:edit</right>
+        </path>
+        <path url="/customer/enterprise/changegroup">
+            <right>customer:enterprise:edit</right>
+        </path>
+        <path url="/customer/enterprise/block">
+            <right>customer:enterprise:edit</right>
+        </path>
+        <path url="/customer/enterprise/resume">
+            <right>customer:enterprise:edit</right>
+        </path>
+        <path url="/customer/enterprise/delete">
+            <right>customer:enterprise:remove</right>
+        </path>
+        <path url="/customer/enterprise/export">
+            <right>customer:enterprise:export</right>
+        </path>
+        <path url="/customer/enterprisedept/list">
+            <right>customer:enterprisedept:query</right>
+        </path>
+        <path url="/customer/enterprisedept/listwithmembers">
+            <right>customer:enterprisedept:query</right>
+        </path>
+        <path url="/customer/enterprisedept/all">
+            <right>customer:enterprisedept:query</right>
+        </path>
+        <path url="/customer/enterprisedept/info">
+            <right>customer:enterprisedept:query</right>
+        </path>
+        <path url="/customer/enterprisedept/save">
+            <right>customer:enterprisedept:add</right>
+        </path>
+        <path url="/customer/enterprisedept/addemployee">
+            <right>customer:enterprisedept:edit</right>
+        </path>
+        <path url="/customer/enterprisedept/delete">
+            <right>customer:enterprisedept:remove</right>
+        </path>
+        <path url="/customer/enterpriserole/list">
+            <right>customer:enterpriserole:query</right>
+        </path>
+        <path url="/customer/enterpriserole/info">
+            <right>customer:enterpriserole:query</right>
+        </path>
+        <path url="/customer/enterpriserole/save">
+            <right>customer:enterpriserole:add</right>
+        </path>
+        <path url="/customer/enterpriserole/update">
+            <right>customer:enterpriserole:edit</right>
+        </path>
+        <path url="/customer/enterpriserole/level">
+            <right>customer:enterpriserole:edit</right>
+        </path>
+        <path url="/customer/enterpriserole/block">
+            <right>customer:enterpriserole:edit</right>
+        </path>
+        <path url="/customer/enterpriserole/resume">
+            <right>customer:enterpriserole:edit</right>
+        </path>
+        <path url="/customer/enterpriserole/delete">
+            <right>customer:enterpriserole:remove</right>
+        </path>
+        <path url="/customer/followlog/list">
+            <right>customer:followlog:query</right>
+        </path>
+        <path url="/system/taxcategory/save">
+            <right>system:taxcategory:add</right>
+        </path>
+
+    </auth>
+</paths>
